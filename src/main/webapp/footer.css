@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#footer {
+    width: 100%;
+    background-color: #8DA524;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+/* Footer Paragraph */
+#footer p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+
