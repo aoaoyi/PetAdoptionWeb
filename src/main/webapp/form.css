@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+h1{
+	font-family: 'Brush Script MT', cursive;
+	text-align: center;
+	font-size: 50px;
+}
+
+h2{
+	font-family: 'Brush Script MT', cursive;
+	text-align: center;
+	font-size: 24px;
+	padding-top: 10px;
+}
+
+.formBox{
+	width: 420px;
+	height: auto;
+	margin: auto;
+	margin-bottom: 10px;
+	background-color: #FFF7BD;
+	border-radius: 10px;
+	padding-bottom: 10px
+}
+
+form{
+	width: 300px;
+	margin: auto;
+	margin-top: 5px;
+}
+
+form label{
+	display: flex;
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+form input{
+	width: 95%;
+	padding: 7px;
+	border: 1px solid gray;
+	border-radius: 6px;
+}
+
+p {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+form input[type="radio"]{
+	width: 12px;
+}
+
+form label.housingLabel{
+	margin-top: 0px;
+}
+
+form [id="reason"]{
+	padding: 7px;
+	border-radius: 6px;
+	width: 95%;
+	height: auto;
+	min-height: 100px;
+	resize: vertical;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+
+form input[type="checkbox"]{
+	width: 12px;
+	height: 12px;
+}
+
+form input[type="submit"]{
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	width: 100px;
+}
