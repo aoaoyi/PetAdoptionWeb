@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Adoption Form</title>
 <link rel="stylesheet" href="header.css">
 <link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="form.css">
 </head>
 <body>
 <header>
@@ -30,7 +31,54 @@
 	</div>
 </header>
 
-
+<h1>Confirm your Adoption!</h1>
+<div class="formBox">
+	<h2>Let our pets know their owner!</h2>
+	<form id="form">
+		<label for="name">Full Name</label>
+		<input id="name" type="text" placeholder="Your name here">
+		
+		<label for="email">Email</label>
+		<input id="email" type="email" placeholder="abc@gmail.com">
+		
+		<label for="phoneNo">Phone Number</label>
+		<input id="phoneNo" type="text" placeholder="(+60)12 345 6789">
+		
+		<label for="petOption">Pet of Interest</label>
+		<select id="petOption" name="petOption">
+			<option value="pet1">Pet1</option>
+			<option value="pet2">Pet2</option>
+			<option value="pet3">Pet3</option>
+			<option value="pet4">Pet4</option>
+			<option value="pet5">Pet5</option>
+			<option value="pet6">Pet6</option>
+		</select>
+		
+		<p>Housing Type</p>
+		<label for="apartment" class="housingLabel">
+			<input id="apartment" type="radio" name="housingType">
+			Apartment/Condominium
+		</label>
+		<label for="landed" class="housingLabel">
+			<input id="landed" type="radio" name="housingType">
+			Landed House
+		</label>
+		<label for="others" class="housingLabel">
+			<input id="others" type="radio" name="housingType">
+			Others
+		</label>
+		
+		<label for="reason">Reason for Adoption</label>
+		<textarea id="reason" rows="3" wrap="hard" placeholder="Your reason here"></textarea>
+		
+		<label for="agreement">
+			<input id="agreement" type="checkbox">
+			I agree to a home visit before the adoption is approved.
+		</label>
+		
+		<input id="submit" type="submit">
+	</form>
+</div>
 
 <footer id="footer">
     <p>Contact Us: Lucky Pets Adoption</p>
