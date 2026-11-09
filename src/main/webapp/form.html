@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="header.css">
 <link rel="stylesheet" href="footer.css">
 <link rel="stylesheet" href="form.css">
+<link rel="stylesheet" href="adaptScreen.css">
 </head>
 <body>
 <header>
@@ -34,15 +35,15 @@
 <h1>Confirm your Adoption!</h1>
 <div class="formBox">
 	<h2>Let our pets know their owner!</h2>
-	<form id="form">
+	<form id="form" action="ProcessServlet" method="post">
 		<label for="name">Full Name</label>
-		<input id="name" type="text" placeholder="Your name here">
+		<input id="name" name="fullName" type="text" placeholder="Your name here">
 		
 		<label for="email">Email</label>
-		<input id="email" type="email" placeholder="abc@gmail.com">
+		<input id="email"  name="email" type="email" placeholder="abc@gmail.com">
 		
 		<label for="phoneNo">Phone Number</label>
-		<input id="phoneNo" type="text" placeholder="(+60)12 345 6789">
+		<input id="phoneNo" name="phone" type="text" placeholder="(+60)12 345 6789">
 		
 		<label for="petOption">Pet of Interest</label>
 		<select id="petOption" name="petOption">
@@ -56,23 +57,23 @@
 		
 		<p>Housing Type</p>
 		<label for="apartment" class="housingLabel">
-			<input id="apartment" type="radio" name="housingType">
+			<input id="apartment" type="radio" name="housingType" value="Apartment/Condominium">
 			Apartment/Condominium
 		</label>
 		<label for="landed" class="housingLabel">
-			<input id="landed" type="radio" name="housingType">
+			<input id="landed" type="radio" name="housingType" value="Landed House">
 			Landed House
 		</label>
 		<label for="others" class="housingLabel">
-			<input id="others" type="radio" name="housingType">
+			<input id="others" type="radio" name="housingType" value="Others">
 			Others
 		</label>
 		
 		<label for="reason">Reason for Adoption</label>
-		<textarea id="reason" rows="3" wrap="hard" placeholder="Your reason here"></textarea>
+		<textarea id="reason" name="reason" rows="3" wrap="hard" placeholder="Your reason here"></textarea>
 		
 		<label for="agreement">
-			<input id="agreement" type="checkbox">
+			<input id="agreement" type="checkbox" name="agreement" value="Agreed">
 			I agree to a home visit before the adoption is approved.
 		</label>
 		

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* Adoption Confirmation Page */
+
+.confirmation-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+/* Thank You Message Box */
+
+.thank-message {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px 25px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #E2EACB;
+    border-radius: 18px;
+
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Small Label */
+.thank-label {
+    color: #8DA524;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+/* Thank You Heading */
+.thank-message h1 {
+    color:  #8DA524;
+    font-size: 35px;
+    margin: 0 0 12px;
+}
+
+.thank-message h2 {
+    color: #52651B;
+    font-size: 27px;
+    margin: 0 0 12px;
+}
+
+/* Description */
+.thank-description {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Application Details table*/
+.application-details{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: left;
+    border: 2px solid #C9DD71;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.application-details th,
+.application-details td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.application-details th {
+    width: 35%;
+    background-color: #C9DD71;
+    color: #333;
+}
+
+.application-details td {
+    background-color: #ffffff;
+    color: #444;
+}
+
+/* Back to Home Button */
+.back-home {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #8DA524;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.back-home:hover {
+    background-color: #C9DD71;
+    color: #333;
+}

@@ -11,4 +11,15 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.xhtml</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>Process Servlet</servlet-name>
+    <servlet-class>com.luckypet.ProcessServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>Process Servlet</servlet-name>
+  	<url-pattern>/ProcessServlet</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
