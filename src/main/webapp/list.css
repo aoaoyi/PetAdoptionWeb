@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+/* ========== Page ========== */
+body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    background-color: #F7F9EE;          /* very light green background */
+}
+
+/* Main content: limit the width and center it */
+.list-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 30px 50px;
+}
+
+/* ========== ① Page title ========== */
+.list-title {
+    text-align: center;
+    color: #8DA524;
+}
+
+.list-title h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 50px;
+    margin: 10px 0 0;
+}
+
+.list-title p {
+    color: #666;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* ========== ② Filters ========== */
+.filters {
+    margin: 25px 0 35px;
+}
+
+/* Row 1: round species buttons */
+.species-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 25px;
+}
+
+.species-btn {
+    display: flex;
+    flex-direction: column;             /* image on top, text below */
+    align-items: center;
+    gap: 8px;
+    background: none;                   /* remove default button style */
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    color: #555;
+}
+
+.species-btn img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;                 /* square image → circle */
+    object-fit: cover;
+    border: 4px solid transparent;      /* invisible border, so size stays the same when selected */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.species-btn:hover img {
+    transform: scale(1.08);             /* grow a little on hover */
+}
+
+.species-btn.active img {
+    border-color: #8DA524;              /* green ring when selected */
+}
+
+.species-btn.active span {
+    color: #8DA524;
+    font-weight: bold;
+}
+
+/* Row 2: All button + dropdowns */
+.condition-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;                    /* wrap to the next line if the screen is narrow */
+    gap: 15px;
+}
+
+.reset-btn,
+.filter-select {
+    padding: 8px 22px;
+    font-size: 16px;
+    font-family: inherit;
+    color: #8DA524;
+    background-color: white;
+    border: 2px solid #8DA524;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.reset-btn:hover {
+    color: white;
+    background-color: #8DA524;
+}
+
+.filter-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #C9DD71;      /* light green glow when clicked */
+}
+
+/* A dropdown that is not "All" is filled green, so users can see which filters are on */
+.filter-select.selected {
+    color: white;
+    background-color: #8DA524;
+}
+
+/* Options inside the dropdown keep normal colors */
+.filter-select option {
+    color: #333;
+    background-color: white;
+}
+
+.result-count {
+    text-align: center;
+    color: #888;
+    margin: 15px 0 0;
+}
+
+/* ========== ③ Pet cards ========== */
+.pet-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* 3 equal columns */
+    gap: 30px;
+}
+
+.pet-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;                   /* cut the image corners to match the card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pet-card:hover {
+    transform: translateY(-6px);        /* card moves up a little */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.pet-card img {
+    display: block;                     /* remove the small gap under the image */
+    width: 100%;
+    height: 230px;
+    object-fit: cover;                  /* fill the area without stretching */
+}
+
+.pet-info {
+    padding: 18px 20px 22px;
+}
+
+.pet-info h3 {
+    margin: 0 0 6px;
+    font-size: 24px;
+    color: #333;
+}
+
+.pet-meta {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #8DA524;
+}
+
+.pet-story {
+    margin: 0 0 18px;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.view-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    color: white;
+    background-color: #8DA524;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.view-btn:hover {
+    background-color: #C9DD71;
+    color: #4a5a10;
+}
