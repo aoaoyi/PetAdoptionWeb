@@ -2,10 +2,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Insert title here</title>
 <link rel="stylesheet" href="header.css">
 <link rel="stylesheet" href="footer.css">
-<link rel="stylesheet" href="adaptScreen.css">
+<link rel="stylesheet" href="list.css"><!--For the display part in web-->
+<link rel="stylesheet" href="adaptScreen.css"><!--For the display part in phone-->
 </head>
 <body>
 <header>
@@ -27,8 +29,148 @@
     	<a href="list.html">PetList</a>
 	</div>
 </header>
+    <!-- Navigation Bar Home, Our Pets, Adopt, Contact-->
+    <nav class="navbar">
+        <div class="logo"><img src="image/logo.jpg" alt="LuckyPets Logo"><span>LuckyPets</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a><!-- Go to Home -->
+            <a href="list.html">OurPets</a><!-- Go to PetList -->
+            <a href="form.html">Adopt</a><!-- Go to AdoptionForm-->
+            <a href="#footer">Contact</a><!-- Go to footer -->
+        </div>
+    </nav>
+    <!-- Used to indicate the position for displaying the current page transition -->
+    <div class="breadcrumbForList">
+        <a href="index.html">Home</a>
+        <span>→</span>
+        <a href="list.html">PetList</a>
+    </div>
+</header>
 
+<main class="list-page">
 
+    <!-- Page title -->
+    <section class="list-title">
+        <h1>Meet Our Pets</h1>
+        <p>Every one of them is waiting for a loving home.</p>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+
+        <!-- Row 1: species (round image buttons) -->
+        <div class="species-row">
+            <button class="species-btn" data-species="dog">
+                <img src="image/icon-dog.png" alt="Dog">
+                <span>Dogs</span>
+            </button>
+            <button class="species-btn" data-species="cat">
+                <img src="image/icon-cat.png" alt="Cat">
+                <span>Cats</span>
+            </button>
+            <button class="species-btn" data-species="hamster">
+                <img src="image/icon-hamster.png" alt="Hamster">
+                <span>Hamsters</span>
+            </button>
+            <button class="species-btn" data-species="rabbit">
+                <img src="image/icon-rabbit.png" alt="Rabbit">
+                <span>Rabbits</span>
+            </button>
+        </div>
+
+        <!-- Row 2: condition filters (dropdowns), the first option is always All -->
+        <div class="condition-row">
+            <button id="reset-btn" class="reset-btn">All</button>
+
+            <select id="age-filter" class="filter-select">
+                <option value="all">Age: All</option>
+                <option value="baby">Under 1 year</option>
+                <option value="young">1 - 3 years</option>
+                <option value="adult">Over 3 years</option>
+            </select>
+
+            <select id="gender-filter" class="filter-select">
+                <option value="all">Gender: All</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <select id="vaccine-filter" class="filter-select">
+                <option value="all">Vaccinated: All</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+
+        <!-- Shows how many pets match the filters -->
+        <p id="result-count" class="result-count"></p>
+    </section>
+
+    <!-- Pet cards -->
+    <section class="pet-grid">
+
+        <div class="pet-card" data-species="dog" data-age="young" data-gender="male" data-vaccinated="yes">
+            <img src="image/pet1.png" alt="Lucky">
+            <div class="pet-info">
+                <h3>Lucky</h3>
+                <p class="pet-meta">Golden Retriever · 2 years · Male · Vaccinated</p>
+                <p class="pet-story">Friendly and gentle, loves playing fetch with kids.</p>
+                <a href="detail.html" class="view-btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="pet-card" data-species="cat" data-age="young" data-gender="female" data-vaccinated="yes">
+            <img src="image/pet2.png" alt="Mochi">
+            <div class="pet-info">
+                <h3>Mochi</h3>
+                <p class="pet-meta">British Shorthair · 1 year · Female · Vaccinated</p>
+                <p class="pet-story">Quiet and calm, her favourite spot is by the window.</p>
+                <a href="detail.html" class="view-btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="pet-card" data-species="dog" data-age="adult" data-gender="female" data-vaccinated="no">
+            <img src="image/pet3.png" alt="Coco">
+            <div class="pet-info">
+                <h3>Coco</h3>
+                <p class="pet-meta">Poodle · 4 years · Female · Not vaccinated</p>
+                <p class="pet-story">Smart and cheerful, already knows how to sit and shake.</p>
+                <a href="detail.html" class="view-btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="pet-card" data-species="cat" data-age="baby" data-gender="male" data-vaccinated="no">
+            <img src="image/pet4.png" alt="Oreo">
+            <div class="pet-info">
+                <h3>Oreo</h3>
+                <p class="pet-meta">Domestic Shorthair · 8 months · Male · Not vaccinated</p>
+                <p class="pet-story">Playful and curious, loves chasing toys around the house.</p>
+                <a href="detail.html" class="view-btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="pet-card" data-species="hamster" data-age="baby" data-gender="female" data-vaccinated="no">
+            <img src="image/pet5.png" alt="Peanut">
+            <div class="pet-info">
+                <h3>Peanut</h3>
+                <p class="pet-meta">Syrian Hamster · 6 months · Female · Not vaccinated</p>
+                <p class="pet-story">Tiny and busy, stuffs her cheeks with sunflower seeds.</p>
+                <a href="detail.html" class="view-btn">View Details</a>
+            </div>
+        </div>
+
+        <div class="pet-card" data-species="rabbit" data-age="young" data-gender="male" data-vaccinated="yes">
+            <img src="image/pet6.png" alt="Snowball">
+            <div class="pet-info">
+                <h3>Snowball</h3>
+                <p class="pet-meta">Holland Lop · 2 years · Male · Vaccinated</p>
+                <p class="pet-story">Soft floppy ears, loves carrots and gentle pets.</p>
+                <a href="detail.html" class="view-btn">View Details</a>
+            </div>
+        </div>
+
+    </section>
+</main>
 
 <footer id="footer">
     <p>Contact Us: Lucky Pets Adoption</p>
@@ -37,5 +179,6 @@
 
     <p>© Lucky Pets, 2026. All Rights Reserved.</p>
 </footer>
+<script src="list.js"></script>
 </body>
 </html>
