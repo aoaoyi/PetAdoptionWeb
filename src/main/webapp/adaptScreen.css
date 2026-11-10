@@ -1,3 +1,16 @@
 @charset "UTF-8";
 
 /*用来放适应屏幕大小的代码*/
+
+/* Tablet */
+@media (max-width: 900px) {
+    .pet-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/*List Phone */
+@media (max-width: 600px) {
+    .list-page { padding: 15px; }
+    .pet-grid { grid-template-columns: 1fr; }
+    .species-row { gap: 15px; }
+    .species-btn img { width: 60px; height: 60px; }
+}
