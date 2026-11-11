@@ -6,7 +6,7 @@ let reason = document.getElementById("reason");
 let agreement = document.getElementById("agreement");
 let form = document.querySelector("form");
 
-alert("JavaScript is connected!");
+
 
 form.addEventListener("submit", (e)=>{
 	const errors = [];
