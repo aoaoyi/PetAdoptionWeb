@@ -1,127 +1,128 @@
+
 @charset "UTF-8";
 
-/* Header */
+/* ===== Header ===== */
+
 header {
     width: 100%;
     background-color: #8DA524;
+    box-sizing: border-box;
 }
 
-/* Navigation Bar */
+header img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ===== Navigation Bar ===== */
+
 .navbar {
-    display: flex;/*Arrange the child elements horizontally.*/
-    justify-content: space-between;/*Make the distances between the child elements as evenly distributed as possible*/
-    align-items: center;/*Control the arrangement position of the sub-elements along the cross-axis (vertical axis) to be centered.*/
-    padding: 20px 50px;/*Top and bottom padding: 20; Left and right padding: 50*/
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    gap: 15px;
 }
 
-/* Website Logo */
+/* ===== Logo ===== */
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-.logo img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
+    gap: 12px;
 }
 
 .logo span {
+	font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: clamp(20px, 5vw, 48px);
     color: white;
-    font-size: 26px;
-    font-weight: bold;
+    white-space: nowrap;
 }
 
 
-/* Navigation Links */
+.logo img {
+    width: clamp(60px, 12vw, 100px);
+    height: auto;
+    max-width: none;
+    flex-shrink: 0;
+}
+/* ===== Navigation Links ===== */
+
 .nav-links {
     display: flex;
-    gap: 30px;/*The spacing between the elements is 30px.*/
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
 }
 
-.nav-links a {/*All the links inside the container*/
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 10px 15px;
-    border-radius: 8px;/*Create a button*/
+header .nav-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: transform 0.2s;
 }
 
-.nav-links a:hover {/*The link when the mouse hovers over it*/
-     color: write;
+header .nav-links a img {
+    width: clamp(100px, 9vw, 200px);
+    height: auto;
+    display: block;
+}
+
+/* Hover */
+.nav-links a:hover {
+    transform: translateY(-4px) rotate(-3deg);
+}
+
+/* Current page */
+.nav-links a.active {
     background-color: #C9DD71;
+    padding: 8px;
+    border-radius: 12px;
 }
 
-/* Breadcrumb-list */
-.breadcrumbForList {
-    padding: 12px 50px;
-    background-color: #C9DD71;
-    font-size: 14px;
-}
+/* ===== Breadcrumb ===== */
 
-.breadcrumbForList a {
-    color: white;
-    text-decoration: none;
-    padding: 6px 10px;
-    border-radius: 6px;/*Create a button*/
-}
-
-.breadcrumbForList a:hover {
-    color: write;
-    background-color: #8DA524;
-}
-
-.breadcrumbForList span {
-    margin: 0 10px;/*Make a 10px margin on both sides for each ->.*/
-    color: white;
-}
-
-/* Breadcrumb-detail */
-.breadcrumbForDetail {
-    padding: 12px 50px;
-    background-color: #C9DD71;
-    font-size: 14px;
-}
-
-.breadcrumbForDetail a {
-    color: white;
-    text-decoration: none;
-    padding: 6px 10px;
-    border-radius: 6px;/*Create a button*/
-}
-
-.breadcrumbForDetail a:hover {
-    color: write;
-    background-color: #8DA524;
-}
-
-.breadcrumbForDetail span {
-    margin: 0 10px;/*Make a 10px margin on both sides for each ->.*/
-    color: white;
-}
-
-/* Breadcrumb-form */
+.breadcrumbForList,
+.breadcrumbForDetail,
 .breadcrumbForForm {
-    padding: 12px 50px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 40px;
     background-color: #C9DD71;
     font-size: 14px;
 }
 
+.breadcrumbForList a,
+.breadcrumbForDetail a,
 .breadcrumbForForm a {
     color: white;
     text-decoration: none;
-    padding: 6px 10px;
-    border-radius: 6px;/*Create a button*/
+    padding: 4px 10px;
+    border-radius: 6px;
 }
 
+.breadcrumbForList a:hover,
+.breadcrumbForDetail a:hover,
 .breadcrumbForForm a:hover {
-    color: write;
+    color: white;
     background-color: #8DA524;
 }
 
+.breadcrumbForList span,
+.breadcrumbForDetail span,
 .breadcrumbForForm span {
-    margin: 0 10px;/*Make a 10px margin on both sides for each ->.*/
+    margin: 0 6px;
     color: white;
+}
+
+/* ===== Accessibility ===== */
+
+@media (prefers-reduced-motion: reduce) {
+    .logo img,
+    .nav-links a {
+        transition: none;
+    }
 }
