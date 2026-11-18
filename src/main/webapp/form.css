@@ -1,62 +1,123 @@
 @charset "UTF-8";
 
+body {
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    background-color: #F7F9EE;
+}
+
 h1{
-	font-family: 'Brush Script MT', cursive;
 	text-align: center;
 	font-size: 50px;
 }
 
 h2{
-	font-family: 'Brush Script MT', cursive;
 	text-align: center;
 	font-size: 24px;
-	padding-top: 10px;
 }
 
-.formBox{
-	width: 420px;
-	height: auto;
-	margin: auto;
-	margin-bottom: 10px;
-	background-color: #FFF7BD;
-	border-radius: 10px;
-	padding-bottom: 10px
+.form-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.title-card {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px 25px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #E2EACB;
+    border-radius: 18px;
+
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    
+    color:  #8DA524;
+    font-size: 35px;
 }
 
 form{
-	width: 300px;
 	margin: auto;
 	margin-top: 5px;
 }
 
+.form-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: left;
+    border: 2px solid #C9DD71;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-table th,
+.form-table td {
+	vertical-align: top;
+	font-size: 18px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.form-table th {
+    width: 35%;
+    background-color: #C9DD71;
+    color: #333;
+}
+
+.form-table td {
+    background-color: #ffffff;
+    color: #444;
+}
+
 form label{
 	display: flex;
-	margin-top: 20px;
 	font-size: 18px;
 }
 
 form input{
 	width: 95%;
 	padding: 7px;
-	border: 1px solid gray;
-	border-radius: 6px;
+	border: none;
 }
 
-p {
-	font-size: 18px;
-	margin-bottom: 5px;
+form select{
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    background-color: #8DA524;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+form select:hover {
+    background-color: #C9DD71;
+    color: #4a5a10;
 }
 
 form input[type="radio"]{
-	width: 12px;
+	width: 14px;
+	margin-bottom: 10px;
 }
 
-form label.housingLabel{
-	margin-top: 0px;
+form .housingLabel{
+	margin-bottom: 10px;
 }
 
 form [id="reason"]{
 	padding: 7px;
+	border: none;
 	border-radius: 6px;
 	width: 95%;
 	height: auto;
