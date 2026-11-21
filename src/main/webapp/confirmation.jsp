@@ -6,6 +6,9 @@
 <meta charset="UTF-8">
 <title>Adoption Confirmation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
 <link rel="stylesheet" href="header.css">
 <link rel="stylesheet" href="footer.css">
 <link rel="stylesheet" href="confirmation.css">
@@ -40,9 +43,9 @@
     </div>
 </header>
 
-	<div class="confirmation-container">
+	<div class="confirmation-container container-fluid ">
 		
-		<div class="thank-message">
+		<div class="thank-message container-fluid">
 		
 			<p class="thank-label">ADOPTION APPLICATION</p>
 			
@@ -51,14 +54,14 @@
     		<h2>Thank you, ${param.fullName} !</h2>
 
     		<p 
-    			class="thank-description">We're so happy that you're considering giving ${requestScope.pet} a loving home!
+    			class="thank-description">We're so happy that you're considering giving ${param.pet} a loving home!
     		</p>
 
 		</div>
 
 
 		<h2>Your Application Details</h2>
-
+	<div class="table-responsive">
 		<table class="application-details">
 			<tr>
 				<th>Full Name</th>
@@ -98,7 +101,7 @@
 
 
 		<a href="index.html" class="back-home">Back to Home</a>
-
+	</div>
 	</div>
 
 
