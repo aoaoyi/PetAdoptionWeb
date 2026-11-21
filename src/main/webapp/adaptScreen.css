@@ -8,11 +8,7 @@
     /* Pet List */
     .pet-grid {grid-template-columns: repeat(2, 1fr);}
     
-    /* Header */
-    .navbar {padding: 10px 20px;}
-
-    .nav-links {gap: 10px;}
-
+     /* Header */
     header .nav-links a img {
         width: 65px;
         height: 40px;
@@ -42,13 +38,6 @@
     .species-btn img { width: 60px; height: 60px; }
 
     /* Header */
-    .navbar {padding: 8px 12px;}
-    
-    .nav-links {
-        gap: 5px;
-        flex-wrap: wrap;
-    }
-
     header .nav-links a img {
         width: 50px;
         height: 32px;

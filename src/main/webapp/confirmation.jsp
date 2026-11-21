@@ -13,35 +13,60 @@
 <link rel="stylesheet" href="footer.css">
 <link rel="stylesheet" href="confirmation.css">
 <link rel="stylesheet" href="adaptScreen.css">
-
 </head>
 <body>
 
 <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid px-lg-5">
+            <!-- Logo -->
+            <a class="navbar-brand logo" href="index.html">
+                <img src="image/logo.png" alt="LuckyPets Logo">
+                <span>LuckyPets</span>
+            </a>
 
-    <!-- Navigation Bar Home, Our Pets, Adopt, Contact-->
-    <nav class="navbar">
-        <div class="logo"><img src="image/logo.png" alt="LuckyPets Logo"><span>LuckyPets</span></div>
-        <div class="nav-links">
-            <a href="index.html"><img src="image/home.png" alt="Home"></a><!-- Go to Home -->
-            <a href="list.html"><img src="image/pet.png" alt="Our Pets"></a><!-- Go to PetList -->
-            <a href="form.html" class="active"><img src="image/adopt.png" alt="Adopt"></a><!-- Go to AdoptionForm-->
-            <a href="#footer"><img src="image/contact.png" alt="Contact"></a><!-- Go to footer -->
+            <!-- Hamburger Button -->
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <div class="nav-links ms-auto">
+                    <a href="index.html"><img src="image/home.png" alt="Home"></a>
+                    <a href="list.html"><img src="image/pet.png" alt="Our Pets"></a>
+                    <a href="form.html" class="active"><img src="image/adopt.png" alt="Adopt"></a>
+                    <a href="#footer"><img src="image/contact.png" alt="Contact"></a>
+                </div>
+            </div>
+            
         </div>
     </nav>
-    <!-- Used to indicate the position for displaying the current page transition -->
+
+    <!-- Breadcrumb -->
     <div class="breadcrumbForForm">
-        <a href="index.html">Home</a>
-        <span>→</span>
-        <a href="list.html">PetList</a>
-        <span>→</span>
-        <a href="detail.html">PetDetail</a>
-        <span>→</span>
-        <a href="form.html">AdoptionForm</a>
-        <span>→</span>
-        <a href="confirmation.jsp">AdoptionForm</a>
+        <div class="container-fluid px-lg-5">
+            <a href="index.html">Home</a>
+            <span>›</span>
+            <a href="list.html">PetList</a>
+            <span>›</span>
+            <a href="detail.html">PetDetail</a>
+            <span>›</span>
+            <a href="form.html">AdoptionForm</a>
+            <span>›</span>
+            <a href="confirmation.jsp">Confirmation</a>
+        </div>
     </div>
+
 </header>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 	<div class="confirmation-container container-fluid ">
 		
@@ -54,7 +79,7 @@
     		<h2>Thank you, ${param.fullName} !</h2>
 
     		<p 
-    			class="thank-description">We're so happy that you're considering giving ${param.pet} a loving home!
+    			class="thank-description">We're so happy that you're considering giving ${param.petOption} a loving home!
     		</p>
 
 		</div>
