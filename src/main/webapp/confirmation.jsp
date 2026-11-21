@@ -5,11 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Adoption Confirmation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="header.css">
 <link rel="stylesheet" href="footer.css">
 <link rel="stylesheet" href="confirmation.css">
 <link rel="stylesheet" href="adaptScreen.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 
@@ -47,7 +48,7 @@
 			
 			<h1>Application Submitted Successfully!</h1>
 
-    		<h2>Thank you, ${requestScope.fullName}!</h2>
+    		<h2>Thank you, ${param.fullName} !</h2>
 
     		<p 
     			class="thank-description">We're so happy that you're considering giving ${requestScope.pet} a loving home!
@@ -61,37 +62,37 @@
 		<table class="application-details">
 			<tr>
 				<th>Full Name</th>
-				<td>${requestScope.fullName}</td>
+				<td>${param.fullName}</td>
 			</tr>
 
 			<tr>
 				<th>Email</th>
-				<td>${requestScope.email}</td>
+				<td>${param.email}</td>
 			</tr>
 
 			<tr>
 				<th>Phone Number</th>
-				<td>${requestScope.phone}</td>
+				<td>${param.phone}</td>
 			</tr>
 
 			<tr>
 				<th>Pet of Interest</th>
-				<td>${requestScope.pet}</td>
+				<td>${param.petOption}</td>
 			</tr>
 
 			<tr>
 				<th>Housing Type</th>
-				<td>${requestScope.housing}</td>
+				<td>${param.housingType}</td>
 			</tr>
 
 			<tr>
 				<th>Reason for Adoption</th>
-				<td>${requestScope.reason}</td>
+				<td>${param.reason}</td>
 			</tr>
 
 			<tr>
 				<th>Home Visit Agreement</th>
-				<td>${empty requestScope.agreement ? 'Not Agreed' : requestScope.agreement}</td>
+				<td>${empty param.agreement ? 'Not Agreed' : param.agreement}</td>
 			</tr>
 		</table>
 
