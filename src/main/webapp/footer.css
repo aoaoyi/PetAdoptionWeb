@@ -2,8 +2,7 @@
 
 #footer {
     width: 100%;
-    background-color: #8DA524;
-    color: white;
+    background-color: #19532B;
     text-align: center;
     padding: 25px 0;
 }
@@ -11,7 +10,10 @@
 /* Footer Paragraph */
 #footer p {
     margin: 8px 0;
-    font-size: 14px;
+    font-family: Trebuchet MS;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFCA26;
 }
 
 
