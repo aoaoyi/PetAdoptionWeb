@@ -74,7 +74,7 @@ body {
 	display: grid;
 	place-items: center;
 	text-align: center;
-	padding: 20px;
+	padding: 4.8vw;
 }
 
 .viewListButton button{
@@ -94,15 +94,6 @@ body {
     transition: background-color 0.2s;
 }
 
-.viewListButton button:hover {
-    background-color: #FFCA26;
-    color: #19532B;
-}
-
-.viewListButton button:hover .small-text {
-    color: #19532B;
-}
-
 .viewListButton .large-text{
 	font-size: 2.3vw;
 }
@@ -111,11 +102,20 @@ body {
 	color: #F3E8CC;
 }
 
+.viewListButton button:hover {
+    background-color:  #FFCA26;
+    color: #19532B;
+}
+
+.viewListButton button:hover .small-text {
+    color: #19532B;
+}
+
 .adoptHighlights{
 	display: grid;
     grid-template-columns: repeat(3, 1fr);
 	gap: 30px;
-	margin: 30px;
+	margin: 0px 30px 70px;
 }
 
 .pet{
@@ -130,7 +130,7 @@ body {
 }
 
 .pet:hover {
-    transform: translateY(-6px);        /* card moves up a little */
+    transform: translateY(-6px); /* card moves up a little */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
