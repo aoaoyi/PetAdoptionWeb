@@ -1,0 +1,387 @@
+body {
+	background-color: #F3E8CC;
+}
+
+.pet-detail {
+	font-family: Trebuchet MS;
+	color: #19532B;
+	font-weight: bold;
+}
+
+.pet-detail p {
+	color: #FFCA26;
+}
+
+/* Main Layout */
+.pet-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    width: 1400px;
+    height: 850px;
+    margin-top: 80px;
+    position: relative;
+    left: 50%;
+	transform: translateX(-50%);
+}
+
+/* Left: Personality */
+.pet-personality {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#pet1 .pet-personality {
+	translate: 315px;
+}
+
+#pet2 .pet-personality {
+	translate: 230px;
+}
+
+#pet3 .pet-personality {
+	translate: 230px 90px;
+}
+
+#pet4 .pet-personality {
+	translate: 245px 10px;
+}
+
+#pet5 .pet-personality {
+	translate: 170px 30px;
+}
+
+#pet6 .pet-personality {
+	translate: 80px 80px;
+}
+
+.speech-bubble {
+    background-color: #19532B;
+    border-radius: 40%;
+    width: 300px;
+    height: 250px;
+    
+    /*control <p>*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	padding: 25px; /*内容与元素边缘之间的距离=p和泡泡边缘*/
+    box-sizing: border-box;
+    animation: bubbleAppear 0.3s ease-out 1.4s both;
+}
+
+.speech-bubble p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.pet-name {
+    font-size: 40px;
+}
+
+.bubble-dot {
+    background-color: #19532B;
+    border-radius: 50%;
+}
+
+.dot1 {
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    width: 40px;
+    height: 40px;
+    animation: bubbleAppear 0.3s ease-out 1s both;
+}
+
+.dot2 {
+    position: absolute;
+    top: 290px;
+    left: 230px;
+    width: 25px;
+    height: 25px;
+    animation: bubbleAppear 0.3s ease-out 0.6s both;
+}
+
+#pet1 .bubble-dot {
+	translate: -60px -22px;
+}
+
+#pet5 .bubble-dot {
+	translate: -30px 7px;
+}
+
+#pet6 .bubble-dot {
+	translate: -35px -26px;
+}
+
+/* Animation for pet speech bubble */
+@keyframes bubbleAppear {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Center: Pet Image */
+.pet-image {
+    position: relative;
+    margin: auto;
+}
+
+.pet-image img {
+	height: 840px;
+    object-fit: contain;
+    animation: imageSlideUp 0.6s ease-out both;
+}
+
+#pet1 .pet-image img{
+	translate: -100px;
+}
+
+#pet2 .pet-image img{
+	translate: -50px;
+}
+
+#pet4 .pet-image img{
+	translate: -40px;
+}
+
+#pet5 .pet-image img{
+	height: 700px;
+	translate: -30px 30px;
+}
+
+#pet6 .pet-image img{
+	width: 800px;
+	height: auto;
+	translate: -20px;
+}
+
+/* Animation for pet image */
+@keyframes imageSlideUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Right: Pet Information */
+.pet-information {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: auto 0 auto 30px;
+}
+
+.pet-information h3 {
+    font-size: 29px;
+    margin: 0;
+    animation: infoAppear 0.6s ease-out 1.8s both;
+}
+
+.pet-information p {
+    font-size: 21px;
+    margin: 0;
+    margin-bottom: 20px;
+    animation: infoAppear 0.6s ease-out 1.9s both;
+}
+
+.pet-information p:last-child {
+    margin-bottom: 0;
+}
+
+/* Animation for pet info */
+@keyframes infoAppear {
+    from {
+        clip-path: inset(0 100% 0 0);
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Bottom: Care Needs*/
+.pet-care-needs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pet-care-needs h3 {
+	font-size: 60px;
+	margin-top: 80px;
+	margin-bottom: 0;
+}
+
+.pet-care-needs p {
+	background-color: #19532B;
+    border-radius: 30px;
+    width: 1200px;
+    height: 300px;
+    margin-top: 30px;
+    
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	padding: 100px;
+    box-sizing: border-box;
+    
+	font-size: 20px;
+	line-height: 1.75;
+}
+
+.adoption-button {
+    position: relative;
+    display: block;
+    width: 360px;
+    height: 70px;
+    border-radius: 50px;
+    margin: 60px auto 100px;
+    
+    text-decoration: none;
+    font-size: 20px;
+    
+    overflow: hidden;
+}
+
+.adoption-fee {
+    background-color: #19532B;
+    width: 100%;
+    height: 100%;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    color: #FFCA26;
+}
+
+.fee-arrow {
+    background-color: #FFCA26;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 25px;
+    color:  #19532B;
+    
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.adopt-me {
+    position: absolute;
+    inset: 0;
+
+    background-color: #FFCA26;
+    padding: 0 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #19532B;
+
+    clip-path: circle(0% at 60% 50%);
+    transition: clip-path 1s ease;
+}
+
+.adopt-arrow {
+	width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 25px;
+    
+	transform: translateX(-95.65625px);
+    transition: transform 1s ease;
+}
+
+/* Animation for adoption button */
+.adoption-button:hover .adopt-me {
+    clip-path: circle(150% at 60% 50%);
+}
+
+.adoption-button:hover .adopt-arrow {
+    transform: translateX(0px);
+}
+
+/* Animation for care needs and adoption button */
+.scroll-reveal {
+    transform: translateY(60px);
+    opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.scroll-reveal.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Navigation button */
+.pet-navigation {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    translate: 0 -50%;
+    
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pet-navigation button {
+	width: 40px;
+    height: 100px;
+    background-color: #19532B;
+    border: none;
+    border-radius: 30px;
+    
+    font-family: Trebuchet MS;
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFCA26;
+    cursor: pointer;
+    
+    transition: transform 0.5s ease;
+}
+
+#prev-pet {
+    transform: translateX(-1320px);
+}
+
+/* Animation for navigation button */
+#prev-pet:hover {
+    transform: translateX(-1320px) scale(1.3);
+}
+
+#next-pet:hover {
+    transform: scale(1.3);
+}
