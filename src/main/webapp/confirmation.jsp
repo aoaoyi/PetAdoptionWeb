@@ -39,10 +39,10 @@
             <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <div class="nav-links ms-auto">
-                    <a href="index.html"><img src="image/home.png" alt="Home"></a>
-                    <a href="list.html"><img src="image/pet.png" alt="Our Pets"></a>
-                    <a href="form.html" class="active"><img src="image/adopt.png" alt="Adopt"></a>
-                    <a href="#footer"><img src="image/contact.png" alt="Contact"></a>
+                    <a href="index.html">Home</a>
+                    <a href="list.html">Our Pets</a>
+                    <a href="form.html">Adopt</a>
+                    <a href="#footer">Contact</a>
                 </div>
             </div>
             
@@ -54,11 +54,11 @@
         <div class="container-fluid px-lg-5">
             <a href="index.html">Home</a>
             <span>›</span>
-            <a href="list.html">PetList</a>
+            <a href="list.html">Pet List</a>
             <span>›</span>
-            <a href="detail.html">PetDetail</a>
+            <a href="detail.html">Pet Detail</a>
             <span>›</span>
-            <a href="form.html">AdoptionForm</a>
+            <a href="form.html">Adoption Form</a>
             <span>›</span>
             <a href="confirmation.jsp">Confirmation</a>
         </div>
@@ -68,9 +68,9 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-	<div class="confirmation-container container-fluid ">
+	<div class="confirmation-container">
 		
-		<div class="thank-message container-fluid">
+		<div class="thank-message">
 		
 			<p class="thank-label">ADOPTION APPLICATION</p>
 			
