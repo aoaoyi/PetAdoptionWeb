@@ -12,7 +12,7 @@ body {
     width: 80%;
     max-width: 800px;
     
-    margin: 40px auto;
+    margin: 100px auto;
     padding: 35px;
     display: flex;
     flex-direction: column;
