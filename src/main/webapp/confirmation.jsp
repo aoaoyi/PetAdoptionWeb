@@ -64,6 +64,14 @@
         </div>
     </div>
 
+	<!-- Backdrop -->
+    <button class="navbar-backdrop"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-label="Close navigation menu">
+	</button>
+
 </header>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
