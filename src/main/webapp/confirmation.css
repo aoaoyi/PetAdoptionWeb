@@ -112,12 +112,5 @@ h2 {
 }
 
 .back-home:hover {
-    background-color: #F3E8CC;
-    color: #19532B;
     scale: 1.05;
-}
-
-.back-home:hover {
-    background-color: #C9DD71;
-    color: #333;
 }
