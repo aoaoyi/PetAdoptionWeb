@@ -17,13 +17,11 @@ body {
 }
 
 .title-image {
-    position: relative;
-    margin: 4.5vw 0px auto 4.5vw;
-}
-
-.title-image img {
 	width: 52vw;
     object-fit: contain;
+    position: relative;
+    margin: 4.5vw 0px auto 4.5vw;
+    
     animation: imageSlideUp 1.3s ease-out both;
 }
 
