@@ -1,73 +1,414 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-	rel="stylesheet">
-<link rel="stylesheet" href="header.css">
-<link rel="stylesheet" href="footer.css">
-<link rel="stylesheet" href="adaptScreen.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+		rel="stylesheet">
+		<link rel="stylesheet" href="header.css">
+		<link rel="stylesheet" href="footer.css">
+		<link rel="stylesheet" href="adaptScreen.css">
+	</head>
+	<body>
+		<header>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container-fluid px-lg-5">
+				<!-- Logo -->
+				<a class="navbar-brand logo" href="index.html">
+					<img src="image/logo.png" alt="LuckyPets Logo">
+					<span>LuckyPets</span>
+				</a>
+		
+				<!-- Hamburger Button -->
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#mainNavbar"
+					aria-controls="mainNavbar"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+		
+					<span class="navbar-toggler-icon"></span>
+				</button>
+		
+				<!-- Navigation Links -->
+				<div class="collapse navbar-collapse" id="mainNavbar">
+					<div class="nav-links ms-auto">
+						<a href="index.html"><img src="image/home.png" alt="Home"></a>
+						<a href="list.html" class="active"><img src="image/pet.png" alt="Our Pets"></a>
+						<a href="form.html"><img src="image/adopt.png" alt="Adopt"></a>
+						<a href="#footer"><img src="image/contact.png" alt="Contact"></a>
+					</div>
+				</div>
+				
+			</div>
+		</nav>
+		
+		<!-- Breadcrumb -->
+		<div class="breadcrumbForForm">
+			<div class="container-fluid px-lg-5">
+				<a href="index.html">Home</a>
+				<span>›</span>
+				<a href="list.html">PetList</a>
+				<span>›</span>
+				<a href="detail.html">PetDetail</a>
+			</div>
+		</div>
+		
+		</header>
+	
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+		
+		<!-- Pet 1 -->
+	    <div class="pet-detail" id="pet1">
+	  		<div class="pet-main-grid">
+			    <!-- Pet Personality -->
+			    <div class="pet-personality">
+			    	<div class="speech-bubble">
+			    		<p>Hi, I'm <span class="pet-name">Lucky</span>. I am friendly and gentle, loves playing fetch with kids.</p>
+			    	</div>
+			    	<div class="bubble-dot dot1"></div>
+	    			<div class="bubble-dot dot2"></div>
+			    </div>
+			   
+			    <!-- Pet Image -->
+			    <div class="pet-image">
+			    	<img src="image/pet1.png" alt="Lucky">
+			    </div>
+			    
+			    <!-- Pet Information -->
+			    <div class="pet-information">
+			    	<h3>ANIMAL TYPE</h3>
+			    	<p>Dog</p>
+			    	
+			    	<h3>BREED</h3>
+			    	<p>Golden Retriever</p>
+			    	
+			    	<h3>AGE</h3>
+			    	<p>2 years</p>
+			    	
+			    	<h3>GENDER</h3>
+			    	<p>Male</p>
+			    	
+			    	<h3>VACCINATED</h3>
+			    	<p>Yes</p>
+			    	
+			    	<h3>NEUTERED</h3>
+			    	<p>No</p>
+			    </div>
+		    </div>
+		    
+		    <!-- Care Needs -->
+		    <div class="pet-care-needs scroll-reveal">
+			    <h3>Care Needs</h3>
+			    <p>Lucky needs daily outdoor exercise, regular walks and plenty of playtime to maintain his physical health. His thick coat requires brushing several times a week to prevent tangles and excessive shedding. As a large breed, he should receive a balanced diet and regular health check-ups to monitor his joint health. His future owner should consider arranging neutering with a veterinarian.</p>
+			</div>
+			
+			<!-- Adoption Fee and Adopt Me Button -->
+			<a href="form.html" class="adoption-button scroll-reveal">
+				<div class="adoption-fee">
+			        <span>ADOPTION FEE</span>
+			        <span class="fee-arrow">→</span>
+        			<span>RM 250</span>
+    			</div>
+			</a>
+		</div>
+		
+		<!-- Pet 2 -->
+		<div class="pet-detail" id="pet2">
+	  		<div class="pet-main-grid">
+			    <!-- Pet Personality -->
+			    <div class="pet-personality">
+			    	<div class="speech-bubble">
+			    		<p>Hi, I'm <span class="pet-name">Mochi</span>. I am quiet and calm. My favourite spot is by the window.</p>
+			    	</div>
+			    	<div class="bubble-dot dot1"></div>
+	    			<div class="bubble-dot dot2"></div>
+			    </div>
+			   
+			    <!-- Pet Image -->
+			    <div class="pet-image">
+			    	<img src="image/pet2.png" alt="Mochi">
+			    </div>
+			    
+			    <!-- Pet Information -->
+			    <div class="pet-information">
+			    	<h3>ANIMAL TYPE</h3>
+			    	<p>Cat</p>
+			    	
+			    	<h3>BREED</h3>
+			    	<p>British Shorthair</p>
+			    	
+			    	<h3>AGE</h3>
+			    	<p>1 years</p>
+			    	
+			    	<h3>GENDER</h3>
+			    	<p>Female</p>
+			    	
+			    	<h3>VACCINATED</h3>
+			    	<p>Yes</p>
+			    	
+			    	<h3>NEUTERED</h3>
+			    	<p>Yes</p>
+			    </div>
+		    </div>
+		    
+		    <!-- Care Needs -->
+		    <div class="pet-care-needs scroll-reveal">
+			    <h3>Care Needs</h3>
+			    <p>Mochi needs a balanced diet with controlled portions to maintain a healthy weight, as British Shorthair cats can be prone to obesity. Her short, dense coat should be brushed regularly, and she needs daily playtime to stay active. Provide a clean litter box, fresh drinking water and a comfortable indoor environment.</p>
+		    </div>
+			
+			<!-- Adoption Fee and Adopt Me Button -->
+			<a href="form.html" class="adoption-button scroll-reveal">
+				<div class="adoption-fee">
+			        <span>ADOPTION FEE</span>
+			        <span class="fee-arrow">→</span>
+        			<span>RM 350</span>
+    			</div>
+			</a>
+		</div>
+		
+		<!-- Pet 3 -->
+		<div class="pet-detail" id="pet3">
+	  		<div class="pet-main-grid">
+			    <!-- Pet Personality -->
+			    <div class="pet-personality">
+			    	<div class="speech-bubble">
+			    		<p>Hi, I'm <span class="pet-name">Coco</span>.<br>I am quiet and calm. My favourite spot is by the window.</p>
+			    	</div>
+			    	<div class="bubble-dot dot1"></div>
+	    			<div class="bubble-dot dot2"></div>
+			    </div>
+			   
+			    <!-- Pet Image -->
+			    <div class="pet-image">
+			    	<img src="image/pet3.png" alt="Coco">
+			    </div>
+			    
+			    <!-- Pet Information -->
+			    <div class="pet-information">
+			    	<h3>ANIMAL TYPE</h3>
+			    	<p>Dog</p>
+			    	
+			    	<h3>BREED</h3>
+			    	<p>Poodle</p>
+			    	
+			    	<h3>AGE</h3>
+			    	<p>4 years</p>
+			    	
+			    	<h3>GENDER</h3>
+			    	<p>Female</p>
+			    	
+			    	<h3>VACCINATED</h3>
+			    	<p>No</p>
+			    	
+			    	<h3>NEUTERED</h3>
+			    	<p>Yes</p>
+			    </div>
+		    </div>
+		    
+		    <!-- Care Needs -->
+		    <div class="pet-care-needs scroll-reveal">
+			    <h3>Care Needs</h3>
+			    <p>Coco requires regular grooming and professional hair trimming every 4–6 weeks to prevent her curly coat from becoming tangled. She enjoys daily walks, interactive games and mental stimulation to keep her intelligent and energetic mind active. Her future owner should arrange the necessary vaccinations and veterinary health checks before introducing her to public spaces.</p>
+		    </div>
+			
+			<!-- Adoption Fee and Adopt Me Button -->
+			<a href="form.html" class="adoption-button scroll-reveal">
+				<div class="adoption-fee">
+			        <span>ADOPTION FEE</span>
+			        <span class="fee-arrow">→</span>
+        			<span>RM 250</span>
+    			</div>
+			</a>
+		</div>
+		
+		<!-- Pet 4 -->
+		<div class="pet-detail" id="pet4">
+	  		<div class="pet-main-grid">
+			    <!-- Pet Personality -->
+			    <div class="pet-personality">
+			    	<div class="speech-bubble">
+			    		<p>Hi, I'm <span class="pet-name">Oreo</span>. I am playful and curious, loves chasing toys around the house.</p>
+			    	</div>
+			    	<div class="bubble-dot dot1"></div>
+	    			<div class="bubble-dot dot2"></div>
+			    </div>
+			   
+			    <!-- Pet Image -->
+			    <div class="pet-image">
+			    	<img src="image/pet4.png" alt="Oreo">
+			    </div>
+			    
+			    <!-- Pet Information -->
+			    <div class="pet-information">
+			    	<h3>ANIMAL TYPE</h3>
+			    	<p>Cat</p>
+			    	
+			    	<h3>BREED</h3>
+			    	<p>Domestic Short hair</p>
+			    	
+			    	<h3>AGE</h3>
+			    	<p>8 months</p>
+			    	
+			    	<h3>GENDER</h3>
+			    	<p>Male</p>
+			    	
+			    	<h3>VACCINATED</h3>
+			    	<p>No</p>
+			    	
+			    	<h3>NEUTERED</h3>
+			    	<p>Yes</p>
+			    </div>
+		    </div>
+		    
+		    <!-- Care Needs -->
+		    <div class="pet-care-needs scroll-reveal">
+			    <h3>Care Needs</h3>
+			    <p>Oreo is still young and needs a nutritious kitten diet to support his growth and development. Provide daily playtime, interactive toys and a safe indoor environment to satisfy his curiosity and energy. His future owner should arrange his vaccination schedule with a veterinarian and continue regular health check-ups.</p>
+		    </div>
+			
+			<!-- Adoption Fee and Adopt Me Button -->
+			<a href="form.html" class="adoption-button scroll-reveal">
+				<div class="adoption-fee">
+			        <span>ADOPTION FEE</span>
+			        <span class="fee-arrow">→</span>
+        			<span>RM 150</span>
+    			</div>
+			</a>
+		</div>
+		
+		<!-- Pet 5 -->
+		<div class="pet-detail" id="pet5">
+	  		<div class="pet-main-grid">
+			    <!-- Pet Personality -->
+			    <div class="pet-personality">
+			    	<div class="speech-bubble">
+			    		<p>Hi, I'm <span class="pet-name">Peanut</span>. I am tiny and busy. I will stuffs my cheeks with sunflower seeds.</p>
+			    	</div>
+			    	<div class="bubble-dot dot1"></div>
+	    			<div class="bubble-dot dot2"></div>
+			    </div>
+			   
+			    <!-- Pet Image -->
+			    <div class="pet-image">
+			    	<img src="image/pet5.png" alt="Peanut">
+			    </div>
+			    
+			    <!-- Pet Information -->
+			    <div class="pet-information">
+			    	<h3>ANIMAL TYPE</h3>
+			    	<p>Hamster</p>
+			    	
+			    	<h3>BREED</h3>
+			    	<p>Dwarf Hamster</p>
+			    	
+			    	<h3>AGE</h3>
+			    	<p>6 months</p>
+			    	
+			    	<h3>GENDER</h3>
+			    	<p>Female</p>
+			    	
+			    	<h3>VACCINATED</h3>
+			    	<p>No</p>
+			    	
+			    	<h3>NEUTERED</h3>
+			    	<p>No</p>
+			    </div>
+		    </div>
+		    
+		    <!-- Care Needs -->
+		    <div class="pet-care-needs scroll-reveal">
+			    <h3>Care Needs</h3>
+			    <p>Peanut needs a spacious enclosure with deep bedding for burrowing, a suitable exercise wheel and plenty of hiding places. Her diet should consist of balanced hamster food, supplemented with small amounts of suitable fresh vegetables. Syrian hamsters are naturally solitary, so she should be housed alone to prevent territorial fights. Routine vaccination and sterilization are generally not necessary for healthy pet hamsters.</p>
+		    </div>
+			
+			<!-- Adoption Fee and Adopt Me Button -->
+			<a href="form.html" class="adoption-button scroll-reveal">
+				<div class="adoption-fee">
+			        <span>ADOPTION FEE</span>
+			        <span class="fee-arrow">→</span>
+        			<span>RM 30</span>
+    			</div>
+			</a>
+		</div>
+		
+		<!-- Pet 6 -->
+		<div class="pet-detail" id="pet6">
+	  		<div class="pet-main-grid">
+			    <!-- Pet Personality -->
+			    <div class="pet-personality">
+			    	<div class="speech-bubble">
+			    		<p>Hi, I'm <span class="pet-name">Snowball</span>. I have soft floppy ears, and I loves carrots and gentle pets.</p>
+			    	</div>
+			    	<div class="bubble-dot dot1"></div>
+	    			<div class="bubble-dot dot2"></div>
+			    </div>
+			   
+			    <!-- Pet Image -->
+			    <div class="pet-image">
+			    	<img src="image/pet6.png" alt="Snowball">
+			    </div>
+			    
+			    <!-- Pet Information -->
+			    <div class="pet-information">
+			    	<h3>ANIMAL TYPE</h3>
+			    	<p>Rabbit</p>
+			    	
+			    	<h3>BREED</h3>
+			    	<p>Holland Lop</p>
+			    	
+			    	<h3>AGE</h3>
+			    	<p>2 Years</p>
+			    	
+			    	<h3>GENDER</h3>
+			    	<p>Male</p>
+			    	
+			    	<h3>VACCINATED</h3>
+			    	<p>Yes</p>
+			    	
+			    	<h3>NEUTERED</h3>
+			    	<p>Yes</p>
+			    </div>
+		    </div>
+		    
+		    <!-- Care Needs -->
+		    <div class="pet-care-needs scroll-reveal">
+			    <h3>Care Needs</h3>
+			    <p>Snowball needs unlimited fresh hay to maintain healthy digestion and support proper dental wear, together with fresh water and suitable leafy vegetables. Provide a spacious, clean living area with enough room to hop, explore and exercise daily. His ears and coat should be checked and groomed regularly, while his teeth and digestive health should be monitored by a veterinarian.</p>
+		    </div>
+			
+			<!-- Adoption Fee and Adopt Me Button -->
+			<a href="form.html" class="adoption-button scroll-reveal">
+				<div class="adoption-fee">
+			        <span>ADOPTION FEE</span>
+			        <span class="fee-arrow">→</span>
+        			<span>RM 100</span>
+    			</div>
+			</a>
+		</div>
+		
+		<!-- Navigation Button -->
+		<div class="pet-navigation">
+		    <button type="button" id="prev-pet">&lt;</button>
+		    <button type="button" id="next-pet">&gt;</button>
+		</div>
+		
+		<!-- Adopt Me Button -->
+		<div class="adopt-me">
+	        <span>ADOPT ME!</span>
+	        <span class="adopt-arrow">→</span>
+	    </div>
+		
+		<script src="detail.js"></script>
 
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid px-lg-5">
-            <!-- Logo -->
-            <a class="navbar-brand logo" href="index.html">
-                <img src="image/logo.png" alt="LuckyPets Logo">
-                <span>LuckyPets</span>
-            </a>
-
-            <!-- Hamburger Button -->
-            <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navigation Links -->
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <div class="nav-links ms-auto">
-                    <a href="index.html"><img src="image/home.png" alt="Home"></a>
-                    <a href="list.html" class="active"><img src="image/pet.png" alt="Our Pets"></a>
-                    <a href="form.html"><img src="image/adopt.png" alt="Adopt"></a>
-                    <a href="#footer"><img src="image/contact.png" alt="Contact"></a>
-                </div>
-            </div>
-            
-        </div>
-    </nav>
-
-    <!-- Breadcrumb -->
-    <div class="breadcrumbForForm">
-        <div class="container-fluid px-lg-5">
-            <a href="index.html">Home</a>
-            <span>›</span>
-            <a href="list.html">PetList</a>
-            <span>›</span>
-            <a href="detail.html">PetDetail</a>
-        </div>
-    </div>
-
-</header>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-
-<footer id="footer">
-    <p>Contact Us: Lucky Pets Adoption</p>
-    <p>Email: luckypets@gmail.com</p>
-    <p>Phone: +60 123456789</p>
-
-    <p>© Lucky Pets, 2026. All Rights Reserved.</p>
-</footer>
-
-</body>
+		<footer id="footer">
+		    <p>Contact Us: Lucky Pets Adoption</p>
+		    <p>Email: luckypets@gmail.com</p>
+		    <p>Phone: +60 123456789</p>
+		
+		    <p>© Lucky Pets, 2026. All Rights Reserved.</p>
+		</footer>
+	</body>
 </html>
