@@ -133,6 +133,14 @@
 
 <script src="validate.js"></script>
 
+<!-- Show the previously viewed pet when user return to detail page from form page -->
+<script>
+	const lastPetId=sessionStorage.getItem("lastPetId");
+	if(lastPetId) {
+		document.getElementById("pet-detail-link").href="detail.html?id="+lastPetId;
+	}
+</script>
+
 <footer id="footer">
     <p>Contact Us: Lucky Pets Adoption</p>
     <p>Email: luckypets@gmail.com</p>
