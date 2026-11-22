@@ -188,6 +188,7 @@ body {
 
 .pet-information h3 {
     font-size: 29px;
+	font-weight: bold;
     margin: 0;
     animation: infoAppear 0.6s ease-out 1.8s both;
 }
@@ -226,6 +227,7 @@ body {
 
 .pet-care-needs h3 {
 	font-size: 60px;
+	font-weight: bold;
 	margin-top: 80px;
 	margin-bottom: 0;
 }
