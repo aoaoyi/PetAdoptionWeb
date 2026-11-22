@@ -1,29 +1,26 @@
 @charset "UTF-8";
 
 body {
-    font-family: "Times New Roman", serif;
     margin: 0;
-    background-color: #F7F9EE;
-}
-
-h1{
-	text-align: center;
-	font-size: 50px;
-}
-
-h2{
-	text-align: center;
-	font-size: 24px;
+    background-color: #F3E8CC;
+    font-family: Trebuchet MS;
+    color: #FFCA26;
+    font-weight: bold;
 }
 
 .form-container {
     width: 80%;
     max-width: 800px;
-    margin: 50px auto;
+    
+    margin: 40px auto;
     padding: 35px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    background-color: #19532B;
+    border-radius: 35px;
+    
     text-align: center;
     flex: 1;
 }
@@ -31,18 +28,26 @@ h2{
 .title-card {
     width: 80%;
     max-width: 600px;
-    margin: 30px auto;
-    padding: 30px 25px;
+    margin: auto;
 
-    background-color: #FFFFFF;
-    border: 1px solid #E2EACB;
+    background-color: #19532B;
+    border: none;
     border-radius: 18px;
-
-    text-align: center;
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
     
-    color:  #8DA524;
-    font-size: 35px;
+    text-align: center;
+}
+
+h1 {
+	margin: 0;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+h2 {
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
 }
 
 form{
@@ -50,91 +55,111 @@ form{
 	margin-top: 5px;
 }
 
-.form-table{
-    width: 100%;
+.form-table {
+    width: 80%;
     border-collapse: collapse;
-    margin: 20px auto;
+    margin: auto;
     text-align: left;
-    border: 2px solid #C9DD71;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
-.form-table th,
-.form-table td {
-	vertical-align: top;
+.form-table th, .form-table td {
+	vertical-align: middle;
 	font-size: 18px;
     padding: 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #19532B;
 }
 
 .form-table th {
     width: 35%;
-    background-color: #C9DD71;
-    color: #333;
+    background-color: #FFCA26;
+    color: #19532B;
 }
 
 .form-table td {
-    background-color: #ffffff;
-    color: #444;
+    background-color: #F3E8CC;
+    color: #19532B;
 }
 
-form label{
+form label {
 	display: flex;
 	font-size: 18px;
 }
 
-form input{
+form input {
 	width: 95%;
 	padding: 7px;
 	border: none;
+	background-color: #F3E8CC;
 }
 
-form select{
+form select {
     display: inline-block;
-    padding: 5px;
-    color: white;
-    background-color: #8DA524;
-    text-decoration: none;
+    padding: 7px;
+    
+    background-color: #FFCA26;
     border: none;
     border-radius: 8px;
+    
+    text-decoration: none;
+    color: #19532B;
+    
     transition: background-color 0.2s;
 }
 
 form select:hover {
-    background-color: #C9DD71;
-    color: #4a5a10;
+    background-color: #19532B;
+    color: #FFCA26;
 }
 
-form input[type="radio"]{
+form input[type="radio"] {
 	width: 14px;
-	margin-bottom: 10px;
+	margin: auto 0px;
 }
 
 form .housingLabel{
 	margin-bottom: 10px;
 }
 
-form [id="reason"]{
+form .housingLabel:last-child {
+    margin-bottom: 0;
+}
+
+form [id="reason"] {
 	padding: 7px;
 	border: none;
-	border-radius: 6px;
 	width: 95%;
 	height: auto;
 	min-height: 100px;
 	resize: vertical;
 	word-wrap: break-word;
 	white-space: pre-wrap;
+	background-color: #F3E8CC;
 }
 
-form input[type="checkbox"]{
+label[for="agreement"] {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+form label[type="checkbox"] {
+	font-size: 16px;
+}
+
+form input[type="checkbox"] {
 	width: 12px;
 	height: 12px;
 }
 
-form input[type="submit"]{
+form input[type="submit"] {
 	display: block;
 	margin: auto;
 	margin-top: 20px;
 	width: 100px;
+	border-radius: 18px;
+	color: #19532B;
 }
