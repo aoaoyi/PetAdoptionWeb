@@ -280,6 +280,7 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    z-index: 2;
 
     display: flex;
     align-items: center;
@@ -289,7 +290,7 @@ body {
     color:  #19532B;
     
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.8s ease;
 }
 
 .adopt-me {
@@ -299,6 +300,7 @@ body {
     background-color: #FFCA26;
     padding: 0 30px;
     box-sizing: border-box;
+    z-index: 1;
 
     display: flex;
     align-items: center;
@@ -310,27 +312,14 @@ body {
     transition: clip-path 1s ease;
 }
 
-.adopt-arrow {
-	width: 40px;
-    height: 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    font-size: 25px;
-    
-	transform: translateX(-95.65625px);
-    transition: transform 1s ease;
-}
-
 /* Animation for adoption button */
 .adoption-button:hover .adopt-me {
     clip-path: circle(150% at 60% 50%);
 }
 
-.adoption-button:hover .adopt-arrow {
-    transform: translateX(0px);
+.adoption-button:hover .fee-arrow {
+	color: #19532B;
+    transform: translateX(90px);
 }
 
 /* Animation for care needs and adoption button */
