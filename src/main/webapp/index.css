@@ -24,7 +24,7 @@ body {
 .title-image img {
 	width: 52vw;
     object-fit: contain;
-    animation: imageSlideUp 1s ease-out both;
+    animation: imageSlideUp 1.3s ease-out both;
 }
 
 .titleText{
@@ -49,7 +49,7 @@ body {
 /* Animation for Title Image */
 @keyframes imageSlideUp {
     from {
-        transform: translateY(300px);
+        transform: translateY(30px);
         opacity: 0;
     }
     to {
