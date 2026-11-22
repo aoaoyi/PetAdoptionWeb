@@ -54,13 +54,13 @@
 	<div class="title">
 		<img src="image/title.png" alt = "Title Image" class="titleImage">
 		<div class="titleText">
-			<span class="large-title">Lucky Pets Adoption Center</span>
+			<span class="large-title">Lucky Pets<br>Adoption Center</span>
 			<br/>
 			<span class="small-title">Get our pets a new home!</span>
 		</div>
 	</div>
 	
-	<div class="viewListButton" onClick = "location.href='list.html'">
+	<div class="viewListButton scroll-reveal" onClick = "location.href='list.html'">
 		<button>
 			<span class="large-text">Adopt Me Now!</span>
 			<br/>
@@ -68,29 +68,47 @@
 		</button>
 	</div>
 	
-	<section class="adoptHighlights">
+	<section class="adoptHighlights scroll-reveal">
 		<div class="pet" onClick = "location.href='pet1.html'">
 			<img src="image/pet1.png" alt = "Pet1">
 			<br/>
-			<label>Hi! I'm Name</label>
+			<label>Hi! I'm Lucky</label>
 			<br/>
 			<label>My story...</label>
 		</div>
 		<div class="pet" onClick = "location.href='pet2.html'">
 			<img src="image/pet2.png" alt = "Pet2">
 			<br/>
-			<label>Hi! I'm Name</label>
+			<label>Hi! I'm Mochi</label>
 			<br/>
 			<label>My story...</label>
 		</div>
 		<div class="pet" onClick = "location.href='pet3.html'">
 			<img src="image/pet3.png" alt = "Pet3">
 			<br/>
-			<label>Hi! I'm Name</label>
+			<label>Hi! I'm Coco</label>
 			<br/>
 			<label>My story...</label>
 		</div>
 	</section>
+
+	<script>
+		<!-- Animation for Hightlights -->
+		const revealElements=document.querySelectorAll(".scroll-reveal");
+	
+		const observer=new IntersectionObserver((entries) => {
+		    entries.forEach(entry => {
+		        if (entry.isIntersecting) {
+		            entry.target.classList.add("show");
+		            observer.unobserve(entry.target);
+		        }
+		    });
+		}, {threshold: 0.2});
+	
+		revealElements.forEach(element => {
+		    observer.observe(element);
+		});
+	</script>
 
 <footer id="footer">
     <p>Contact Us: Lucky Pets Adoption</p>
