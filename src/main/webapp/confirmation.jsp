@@ -53,13 +53,13 @@
     <div class="breadcrumbForForm">
         <div class="container-fluid px-lg-5">
             <a href="index.html">Home</a>
-            <span>›</span>
+            <span>&gt;</span>
             <a href="list.html">Pet List</a>
-            <span>›</span>
+            <span>&gt;</span>
             <a href="detail.html">Pet Detail</a>
-            <span>›</span>
+            <span>&gt;</span>
             <a href="form.html">Adoption Form</a>
-            <span>›</span>
+            <span>&gt;</span>
             <a href="confirmation.jsp">Confirmation</a>
         </div>
     </div>
