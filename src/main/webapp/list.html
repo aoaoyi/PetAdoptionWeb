@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pet List</title>
+<title>Insert title here</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
 	rel="stylesheet">
@@ -13,8 +13,8 @@
 <link rel="stylesheet" href="adaptScreen.css"><!--For the display part in phone-->
 </head>
 <body>
-
 <header>
+    <!-- Navigation Bar Home, Our Pets, Adopt, Contact-->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid px-lg-5">
             <!-- Logo -->
@@ -46,16 +46,12 @@
             
         </div>
     </nav>
-
-    <!-- Breadcrumb -->
-    <div class="breadcrumbForForm">
-        <div class="container-fluid px-lg-5">
-            <a href="index.html">Home</a>
-            <span>›</span>
-            <a href="list.html">Pet List</a>
-        </div>
-    </div>
-
+    <!-- Used to indicate the position for displaying the current page transition -->
+    <div class="breadcrumbForList">
+    	<a href="index.html">Home</a>
+    	<span>→</span>
+    	<a href="list.html">Pet List</a>
+	</div>
 </header>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -166,7 +162,7 @@
             <img src="image/pet5.png" alt="Peanut">
             <div class="pet-info">
                 <h3>Peanut</h3>
-                <p class="pet-meta">Syrian Hamster · 6 months · Female · Not vaccinated</p>
+                <p class="pet-meta">Dwarf Hamster · 6 months · Female · Not vaccinated</p>
                 <p class="pet-story">Tiny and busy, stuffs her cheeks with sunflower seeds.</p>
                 <a href="detail.html?id=pet5" class="view-btn">View Details</a>
             </div>
@@ -181,6 +177,7 @@
                 <a href="detail.html?id=pet6" class="view-btn">View Details</a>
             </div>
         </div>
+
     </section>
 </main>
 
