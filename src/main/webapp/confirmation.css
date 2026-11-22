@@ -2,70 +2,71 @@
 /* Adoption Confirmation Page */
 
 body {
-	font-family: "Times New Roman", serif;
-    margin: 0;
+    background-color: #F3E8CC;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #F7F9EE;
+    margin: 0;
+    font-family: Trebuchet MS;
+    color: #FFCA26;
+    font-weight: bold;
 }
-
 
 .confirmation-container {
     width: 80%;
     max-width: 800px;
-    margin: 50px auto;
+    margin: 100px auto;
     padding: 35px;
-    background-color: white;
-    border-radius: 15px;
+    background-color: #19532B;
+    
+    display: flex;
+    flex-direction: column;
+    border-radius: 35px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex: 1;
 }
 
-
-
 /* Thank You Message Box */
-
 .thank-message {
     width: 80%;
     max-width: 600px;
     margin: 30px auto;
-    padding: 30px 25px;
-
-    background-color: #FFFFFF;
-    border: 1px solid #E2EACB;
+    padding: 30px;
+    background-color: #19532B;
+    border: 1px solid #FFCA26;
     border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
 
     text-align: center;
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
 }
 
 /* Small Label */
 .thank-label {
-    color: #8DA524;
-    font-size: 12px;
-    font-weight: bold;
+	color: #F3E8CC;
+    font-size: 15px;
     letter-spacing: 3px;
     margin-bottom: 12px;
 }
 
 /* Thank You Heading */
 .thank-message h1 {
-    color:  #8DA524;
     font-size: 35px;
+    font-weight: bold;
     margin: 0 0 12px;
 }
 
 .thank-message h2 {
-    color: #52651B;
-    font-size: 27px;
+    font-size: 25px;
+    color: #F3E8CC;
     margin: 0 0 12px;
+}
+
+h2 {
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 /* Description */
 .thank-description {
-    color: #666666;
+    color: #F3E8CC;
     font-size: 16px;
     line-height: 1.8;
     margin: 0;
@@ -73,42 +74,47 @@ body {
 
 /* Application Details table*/
 .application-details{
-    width: 100%;
+    width: 80%;
     border-collapse: collapse;
     margin: 20px auto;
     text-align: left;
-    border: 2px solid #C9DD71;
-    border-radius: 10px;
+    border: 1px solid #19532B;
+    border-radius: 20px;
     overflow: hidden;
 }
 
-.application-details th,
-.application-details td {
+.application-details th, .application-details td {
     padding: 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #19532B;
 }
 
 .application-details th {
     width: 35%;
-    background-color: #C9DD71;
-    color: #333;
+    background-color: #FFCA26;
+    color: #19532B;
 }
 
 .application-details td {
-    background-color: #ffffff;
-    color: #444;
+    background-color: #F3E8CC;
+    color: #19532B;
 }
 
 /* Back to Home Button */
 .back-home {
     display: inline-block;
-    margin-top: 25px;
+    margin: 20px auto;
     padding: 12px 25px;
-    background-color: #8DA524;
-    color: white;
+    background-color: #FFCA26;
+    color: #19532B;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 20px;
     transition: 0.3s;
+}
+
+.back-home:hover {
+    background-color: #F3E8CC;
+    color: #19532B;
+    scale: 1.05;
 }
 
 .back-home:hover {
