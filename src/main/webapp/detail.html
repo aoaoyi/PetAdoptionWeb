@@ -15,7 +15,6 @@
 	
 	<body>
 		<header>
-		    <!-- Navigation Bar Home, Our Pets, Adopt, Contact-->
 		    <nav class="navbar navbar-expand-lg navbar-dark">
 		        <div class="container-fluid px-lg-5">
 		            <!-- Logo -->
@@ -38,23 +37,27 @@
 		            <!-- Navigation Links -->
 		            <div class="collapse navbar-collapse" id="mainNavbar">
 		                <div class="nav-links ms-auto">
-						<a href="index.html">Home</a>
-						<a href="list.html" class="active">Our Pets</a>
-						<a href="form.html">Adopt</a>
-						<a href="#footer">Contact</a>
-						</div>
+		                    <a href="index.html">Home</a>
+		                    <a href="list.html">Our Pets</a>
+		                    <a href="form.html" class="active">Adopt</a>
+		                    <a href="#footer">Contact</a>
+		                </div>
 		            </div>
 		        </div>
 		    </nav>
-		    
-		    <!-- Used to indicate the position for displaying the current page transition -->
-		    <div class="breadcrumbForDetail">
-		    	<a href="index.html">Home</a>
-		        <span>→</span>
-		        <a href="list.html">Pet List</a>
-		        <span>→</span>
-		        <a href="detail.html">Pet Detail</a>
-			</div>
+		
+		    <!-- Breadcrumb -->
+		    <div class="breadcrumbForForm">
+		        <div class="container-fluid px-lg-5">
+		            <a href="index.html">Home</a>
+		            <span>›</span>
+		            <a href="list.html">Pet List</a>
+		            <span>›</span>
+		            <a href="#" id="pet-detail-link">Pet Detail</a>
+		            <span>›</span>
+		            <a href="form.html">Adoption Form</a>
+		        </div>
+		    </div>
 		</header>
 		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
