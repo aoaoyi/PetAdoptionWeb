@@ -2,28 +2,77 @@
 @charset "UTF-8";
 
 /* ========================================
-   Tablet
+   Tablet (≤ 900px)
    ======================================== */
 
 @media (max-width: 900px) {
 
-    /* Pet List */
-    .pet-grid {
-        grid-template-columns: repeat(2, 1fr);
+    /* ---------- Pet List ---------- */
+
+    .list-page {
+        padding: 20px;
     }
 
-    /* Header */
+    .list-title h1 {
+        font-size: 32px;
+    }
+
+    .list-title p {
+        font-size: 16px;
+    }
+
+    .species-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .species-btn img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .condition-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .filter-select {
+        min-width: 160px;
+    }
+
+    .pet-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .pet-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+
+    /* ---------- Header ---------- */
+
     header .nav-links a img {
         width: 65px;
         height: 40px;
     }
 
-    /* Index */
+
+    /* ---------- Index ---------- */
+
     .adoptHighlights {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Confirmation */
+
+    /* ---------- Confirmation ---------- */
+
     .confirmation-container {
         width: 90%;
         padding: 25px;
@@ -46,7 +95,9 @@
         font-size: 22px;
     }
 
-    /* Form Container */
+
+    /* ---------- Form Container ---------- */
+
     .form-container {
         width: 90%;
         padding: 25px;
@@ -58,7 +109,6 @@
         width: 90%;
     }
 
-    /* Form Title */
     h1 {
         font-size: 38px;
     }
@@ -67,7 +117,6 @@
         font-size: 20px;
     }
 
-    /* Form Table */
     .form-table {
         width: 90%;
     }
@@ -82,7 +131,6 @@
         font-size: 16px;
     }
 
-    /* Agreement */
     label[for="agreement"] {
         width: 90%;
     }
@@ -90,12 +138,13 @@
 
 
 /* ========================================
-   Mobile
+   Phone (≤ 600px)
    ======================================== */
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
 
-    /* Header */
+    /* ---------- Header ---------- */
+
     header {
         min-height: auto;
     }
@@ -106,7 +155,6 @@
         padding-right: 12px;
     }
 
-    /* Logo */
     .logo {
         max-width: calc(100% - 65px);
         gap: 6px;
@@ -120,12 +168,10 @@
         font-size: clamp(17px, 5vw, 25px);
     }
 
-    /* Hamburger */
     .navbar-toggler {
         padding: 6px 8px;
     }
 
-    /* Navigation Links */
     .nav-links {
         justify-content: center;
         flex-wrap: wrap;
@@ -143,38 +189,103 @@
         height: 32px;
     }
 
-    /* Pet List */
+
+    /* ---------- Pet List ---------- */
+
     .list-page {
         padding: 15px;
     }
 
-    .pet-grid {
-        grid-template-columns: 1fr;
+    .list-title h1 {
+        font-size: 26px;
+    }
+
+    .list-title p {
+        font-size: 14px;
     }
 
     .species-row {
-        gap: 15px;
+        gap: 12px;
     }
 
     .species-btn img {
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
     }
 
-    /* Index */
+    .species-btn span {
+        font-size: 12px;
+    }
+
+    .condition-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .reset-btn {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    .filter-select {
+        width: 100%;
+        min-width: 0;
+        font-size: 14px;
+    }
+
+    .result-count {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .pet-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .pet-card {
+        max-width: 420px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .pet-card img {
+        height: 220px;
+    }
+
+    .pet-info h3 {
+        font-size: 20px;
+    }
+
+    .pet-meta {
+        font-size: 13px;
+    }
+
+    .pet-story {
+        font-size: 14px;
+    }
+
+    .view-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* ---------- Index ---------- */
+
     .adoptHighlights {
         grid-template-columns: 1fr;
     }
 
-    /* Breadcrumb */
+
+    /* ---------- Breadcrumb ---------- */
+
     .breadcrumbForList,
     .breadcrumbForDetail,
     .breadcrumbForForm {
         padding: 8px 12px;
-        font-size: 12px;
-    }
-
-    .breadcrumbForForm {
         font-size: 12px;
     }
 
@@ -186,7 +297,9 @@
         margin: 0 1px;
     }
 
-    /* Confirmation */
+
+    /* ---------- Confirmation ---------- */
+
     .confirmation-container {
         width: 95%;
         padding: 15px;
@@ -236,7 +349,9 @@
         font-size: 14px;
     }
 
-    /* Form Container */
+
+    /* ---------- Form Container ---------- */
+
     .form-container {
         width: 95%;
         padding: 15px;
@@ -249,7 +364,6 @@
         width: 100%;
     }
 
-    /* Form Title */
     h1 {
         font-size: 25px;
     }
@@ -258,7 +372,6 @@
         font-size: 18px;
     }
 
-    /* Form Table */
     .form-table {
         width: 100%;
         font-size: 13px;
@@ -273,6 +386,8 @@
     .form-table th {
         width: 35%;
     }
+
+    /* Input */
 
     form input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
         width: 100%;
@@ -317,13 +432,14 @@
         margin-top: 3px;
     }
 
-    /* Submit Button */
     form input[type="submit"] {
         width: 100px;
         font-size: 13px;
     }
 
-    /* Footer */
+
+    /* ---------- Footer ---------- */
+
     #footer {
         padding: 20px 12px;
     }
@@ -335,12 +451,13 @@
 
 
 /* ========================================
-   Extra Small Mobile
+   Extra Small Mobile (≤ 400px)
    ======================================== */
 
 @media (max-width: 400px) {
 
-    /* Confirmation */
+    /* ---------- Confirmation ---------- */
+
     .confirmation-container {
         width: 96%;
         padding: 10px;
@@ -388,7 +505,9 @@
         font-size: 12px;
     }
 
-    /* Form Container */
+
+    /* ---------- Form Container ---------- */
+
     .form-container {
         width: 96%;
         padding: 10px;
@@ -401,7 +520,6 @@
         width: 100%;
     }
 
-    /* Form Title */
     h1 {
         font-size: 20px;
     }
@@ -410,7 +528,6 @@
         font-size: 16px;
     }
 
-    /* Form Table */
     .form-table {
         width: 100%;
         font-size: 11px;
@@ -423,6 +540,7 @@
     }
 
     /* Input */
+
     form input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
         font-size: 11px;
         padding: 6px;
@@ -445,14 +563,12 @@
         margin-bottom: 6px;
     }
 
-    /* Reason */
     form [id="reason"] {
         min-height: 75px;
         font-size: 11px;
         padding: 6px;
     }
 
-    /* Agreement */
     label[for="agreement"] {
         font-size: 10px;
         gap: 4px;
@@ -463,7 +579,6 @@
         height: 11px;
     }
 
-    /* Submit Button */
     form input[type="submit"] {
         width: 90px;
         font-size: 12px;
