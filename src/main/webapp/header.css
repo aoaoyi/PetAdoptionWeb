@@ -559,17 +559,3 @@ header .navbar {
     }
 
 }
-
-/* ===== Accessibility ===== */
-
-@media (prefers-reduced-motion: reduce) {
-
-    .nav-links a,
-
-    .breadcrumbForForm a {
-
-        transition: none;
-
-    }
-
-}

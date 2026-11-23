@@ -1,50 +1,170 @@
+
 @charset "UTF-8";
 
-/*用来放适应屏幕大小的代码*/
+/* ========================================
+   Tablet
+   ======================================== */
 
-/* Tablet */
 @media (max-width: 900px) {
 
     /* Pet List */
-    .pet-grid {grid-template-columns: repeat(2, 1fr);}
-    
-     /* Header */
+    .pet-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Header */
     header .nav-links a img {
         width: 65px;
         height: 40px;
     }
-    
+
     /* Index */
-    .adoptHighlights {grid-template-columns: repeat(2, 1fr);}
-    
-    /* confirmation */
-     .confirmation-container {
+    .adoptHighlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Confirmation */
+    .confirmation-container {
         width: 90%;
-        padding: 20px;
+        padding: 25px;
+        margin: 60px auto;
     }
 
     .application-details {
         width: 100%;
     }
+
+    .thank-message {
+        padding: 25px;
+    }
+
+    .thank-message h1 {
+        font-size: 30px;
+    }
+
+    .thank-message h2 {
+        font-size: 22px;
+    }
+
+    /* Form Container */
+    .form-container {
+        width: 90%;
+        padding: 25px;
+        margin: 60px auto;
+        gap: 18px;
+    }
+
+    .title-card {
+        width: 90%;
+    }
+
+    /* Form Title */
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    /* Form Table */
+    .form-table {
+        width: 90%;
+    }
+
+    .form-table th,
+    .form-table td {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    form label {
+        font-size: 16px;
+    }
+
+    /* Agreement */
+    label[for="agreement"] {
+        width: 90%;
+    }
 }
 
-/* Phone */
-@media (max-width: 600px) {
-    /* Pet List */
 
-    .list-page { padding: 15px; }
-    .pet-grid { grid-template-columns: 1fr; }
-    .species-row { gap: 15px; }
-    .species-btn img { width: 60px; height: 60px; }
+/* ========================================
+   Mobile
+   ======================================== */
+
+@media (max-width: 576px) {
 
     /* Header */
+    header {
+        min-height: auto;
+    }
+
+    header .container-fluid,
+    .breadcrumbForForm .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    /* Logo */
+    .logo {
+        max-width: calc(100% - 65px);
+        gap: 6px;
+    }
+
+    .logo img {
+        width: clamp(38px, 12vw, 55px);
+    }
+
+    .logo span {
+        font-size: clamp(17px, 5vw, 25px);
+    }
+
+    /* Hamburger */
+    .navbar-toggler {
+        padding: 6px 8px;
+    }
+
+    /* Navigation Links */
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 10px 5px;
+    }
+
+    .nav-links a {
+        padding: 8px;
+        font-size: clamp(13px, 3.5vw, 17px);
+    }
+
     header .nav-links a img {
         width: 50px;
         height: 32px;
     }
 
-	/* Index */
-    .adoptHighlights {grid-template-columns: 1fr;}
+    /* Pet List */
+    .list-page {
+        padding: 15px;
+    }
+
+    .pet-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .species-row {
+        gap: 15px;
+    }
+
+    .species-btn img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Index */
+    .adoptHighlights {
+        grid-template-columns: 1fr;
+    }
 
     /* Breadcrumb */
     .breadcrumbForList,
@@ -53,19 +173,313 @@
         padding: 8px 12px;
         font-size: 12px;
     }
-    
-    /* confirmation */
-     .confirmation-container {
-        width: 95%;
-        padding: 15px;
+
+    .breadcrumbForForm {
+        font-size: 12px;
     }
 
-    .application-details {font-size: 12px;}
+    .breadcrumbForForm a {
+        padding: 6px 9px;
+    }
+
+    .breadcrumbForForm span {
+        margin: 0 1px;
+    }
+
+    /* Confirmation */
+    .confirmation-container {
+        width: 95%;
+        padding: 15px;
+        margin: 30px auto;
+        border-radius: 20px;
+    }
+
+    .thank-message {
+        padding: 18px 12px;
+        margin: 15px auto;
+    }
+
+    .thank-label {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .thank-message h1 {
+        font-size: 23px;
+    }
+
+    .thank-message h2 {
+        font-size: 18px;
+    }
+
+    .thank-description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .confirmation-container > h2 {
+        font-size: 20px;
+    }
+
+    .application-details {
+        font-size: 13px;
+    }
 
     .application-details th,
     .application-details td {
-        padding: 8px;
+        padding: 10px 8px;
         word-break: break-word;
     }
 
+    .back-home {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* Form Container */
+    .form-container {
+        width: 95%;
+        padding: 15px;
+        margin: 30px auto;
+        border-radius: 20px;
+        gap: 15px;
+    }
+
+    .title-card {
+        width: 100%;
+    }
+
+    /* Form Title */
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    /* Form Table */
+    .form-table {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .form-table th,
+    .form-table td {
+        font-size: 13px;
+        padding: 10px 8px;
+    }
+
+    .form-table th {
+        width: 35%;
+    }
+
+    form input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
+        width: 100%;
+        font-size: 13px;
+        padding: 7px;
+    }
+
+    form select {
+        max-width: 100%;
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    form label {
+        font-size: 13px;
+    }
+
+    form input[type="radio"] {
+        width: 13px;
+        flex-shrink: 0;
+    }
+
+    form .housingLabel {
+        margin-bottom: 8px;
+    }
+
+    form [id="reason"] {
+        width: 100%;
+        min-height: 90px;
+        font-size: 13px;
+    }
+
+    label[for="agreement"] {
+        width: 100%;
+        font-size: 12px;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    form input[type="checkbox"] {
+        flex-shrink: 0;
+        margin-top: 3px;
+    }
+
+    /* Submit Button */
+    form input[type="submit"] {
+        width: 100px;
+        font-size: 13px;
+    }
+
+    /* Footer */
+    #footer {
+        padding: 20px 12px;
+    }
+
+    #footer p {
+        font-size: 13px;
+    }
+}
+
+
+/* ========================================
+   Extra Small Mobile
+   ======================================== */
+
+@media (max-width: 400px) {
+
+    /* Confirmation */
+    .confirmation-container {
+        width: 96%;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    .thank-message {
+        padding: 15px 8px;
+        margin: 10px auto;
+    }
+
+    .thank-label {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .thank-message h1 {
+        font-size: 19px;
+    }
+
+    .thank-message h2 {
+        font-size: 16px;
+    }
+
+    .thank-description {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .confirmation-container > h2 {
+        font-size: 17px;
+    }
+
+    .application-details {
+        font-size: 11px;
+    }
+
+    .application-details th,
+    .application-details td {
+        padding: 8px 5px;
+    }
+
+    .back-home {
+        padding: 9px 16px;
+        font-size: 12px;
+    }
+
+    /* Form Container */
+    .form-container {
+        width: 96%;
+        padding: 10px;
+        margin: 20px auto;
+        border-radius: 20px;
+        gap: 12px;
+    }
+
+    .title-card {
+        width: 100%;
+    }
+
+    /* Form Title */
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    /* Form Table */
+    .form-table {
+        width: 100%;
+        font-size: 11px;
+    }
+
+    .form-table th,
+    .form-table td {
+        font-size: 11px;
+        padding: 8px 5px;
+    }
+
+    /* Input */
+    form input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]) {
+        font-size: 11px;
+        padding: 6px;
+    }
+
+    form select {
+        font-size: 11px;
+        padding: 5px;
+    }
+
+    form label {
+        font-size: 11px;
+    }
+
+    form input[type="radio"] {
+        width: 11px;
+    }
+
+    form .housingLabel {
+        margin-bottom: 6px;
+    }
+
+    /* Reason */
+    form [id="reason"] {
+        min-height: 75px;
+        font-size: 11px;
+        padding: 6px;
+    }
+
+    /* Agreement */
+    label[for="agreement"] {
+        font-size: 10px;
+        gap: 4px;
+    }
+
+    form input[type="checkbox"] {
+        width: 11px;
+        height: 11px;
+    }
+
+    /* Submit Button */
+    form input[type="submit"] {
+        width: 90px;
+        font-size: 12px;
+        padding: 7px;
+    }
+}
+
+
+/* ========================================
+   Accessibility
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .nav-links a,
+    .breadcrumbForForm a {
+        transition: none;
+    }
 }

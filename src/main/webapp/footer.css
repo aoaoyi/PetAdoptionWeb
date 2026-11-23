@@ -26,16 +26,4 @@
     overflow-wrap: anywhere;
 }
 
-/* ===== Mobile ===== */
 
-@media (max-width: 576px) {
-
-    #footer {
-        padding: 20px 12px;
-    }
-
-    #footer p {
-        font-size: 13px;
-    }
-
-}
