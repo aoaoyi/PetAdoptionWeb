@@ -69,3 +69,168 @@
     }
 
 }
+@charset "UTF-8";
+
+/* 用来放适应屏幕大小的代码 */
+
+/* ===================== Tablet (≤ 900px) ===================== */
+@media (max-width: 900px) {
+
+    /* ---------- Pet List ---------- */
+    .list-page { padding: 20px; }
+
+    /* 标题 */
+    .list-title h1 { font-size: 32px; }
+    .list-title p  { font-size: 16px; }
+
+    /* 第一行：物种按钮 */
+    .species-row {
+        display: flex;
+        flex-wrap: wrap;                 /* 放不下就换行，不会撑出屏幕 */
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .species-btn img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* 第二行：All 按钮 + 下拉框 */
+    .condition-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .filter-select { min-width: 160px; }
+
+    /* 宠物卡片：2 列 */
+    .pet-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .pet-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;               /* 按比例裁剪，不变形 */
+    }
+
+    /* ---------- Header ---------- */
+    header .nav-links a img {
+        width: 65px;
+        height: 40px;
+    }
+
+    /* ---------- Index ---------- */
+    .adoptHighlights { grid-template-columns: repeat(2, 1fr); }
+
+    /* ---------- Confirmation ---------- */
+    .confirmation-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .application-details { width: 100%; }
+}
+
+/* ===================== Phone (≤ 600px) ===================== */
+@media (max-width: 600px) {
+
+    /* ---------- Pet List ---------- */
+    .list-page { padding: 15px; }
+
+    /* 标题 */
+    .list-title h1 { font-size: 26px; }
+    .list-title p  { font-size: 14px; }
+
+    /* 物种按钮：缩小一点，一行尽量放下 4 个 */
+    .species-row { gap: 12px; }
+
+    .species-btn img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .species-btn span { font-size: 12px; }
+
+    /* 筛选：All 按钮单独占一整行，下面两个下拉框一行 */
+    .condition-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .reset-btn {
+        grid-column: 1 / -1;             /* 横跨两列 */
+        width: 100%;
+    }
+
+    .filter-select {
+        width: 100%;
+        min-width: 0;                    /* 取消平板时的最小宽度，防止溢出 */
+        font-size: 14px;
+    }
+
+    .result-count {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    /* 宠物卡片：1 列，居中，限制最大宽度 */
+    .pet-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .pet-card {
+        max-width: 420px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .pet-card img { height: 220px; }
+
+    .pet-info h3   { font-size: 20px; }
+    .pet-meta      { font-size: 13px; }
+    .pet-story     { font-size: 14px; }
+
+    .view-btn {
+        display: block;                  /* 按钮变成整行，手指更好点 */
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ---------- Header ---------- */
+    header .nav-links a img {
+        width: 50px;
+        height: 32px;
+    }
+
+    /* ---------- Index ---------- */
+    .adoptHighlights { grid-template-columns: 1fr; }
+
+    /* ---------- Breadcrumb ---------- */
+    .breadcrumbForList,
+    .breadcrumbForDetail,
+    .breadcrumbForForm {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    /* ---------- Confirmation ---------- */
+    .confirmation-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .application-details { font-size: 12px; }
+
+    .application-details th,
+    .application-details td {
+        padding: 8px;
+        word-break: break-word;
+    }
+}
