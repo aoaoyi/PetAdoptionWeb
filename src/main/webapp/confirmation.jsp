@@ -91,66 +91,70 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-	<div class="confirmation-container">
-		
-		<div class="thank-message">
-		
-			<p class="thank-label">ADOPTION APPLICATION</p>
-			
-			<h1>Application Submitted Successfully!</h1>
 
-    		<h2>Thank you, ${param.fullName} !</h2>
+<div class="confirmation-container">
 
-    		<p 
-    			class="thank-description">We're so happy that you're considering giving ${param.petOption} a loving home!
-    		</p>
+    <div class="thank-message">
 
-		</div>
+        <p class="thank-label">ADOPTION APPLICATION</p>
 
+        <h1>Application Submitted Successfully!</h1>
 
-		<h2>Your Application Details</h2>
-	<div class="table-responsive">
-		<table class="application-details">
-			<tr>
-				<th>Full Name</th>
-				<td>${param.fullName}</td>
-			</tr>
+        <h2>Thank you, ${fullName}!</h2>
 
-			<tr>
-				<th>Email</th>
-				<td>${param.email}</td>
-			</tr>
+        <p class="thank-description">We're so happy that you're considering giving ${petOption} a loving home!</p>
 
-			<tr>
-				<th>Phone Number</th>
-				<td>${param.phone}</td>
-			</tr>
-
-			<tr>
-				<th>Pet of Interest</th>
-				<td>${param.petOption}</td>
-			</tr>
-
-			<tr>
-				<th>Housing Type</th>
-				<td>${param.housingType}</td>
-			</tr>
-
-			<tr>
-				<th>Reason for Adoption</th>
-				<td>${param.reason}</td>
-			</tr>
-
-			<tr>
-				<th>Home Visit Agreement</th>
-				<td>${empty param.agreement ? 'Not Agreed' : param.agreement}</td>
-			</tr>
-		</table>
+    </div>
 
 
-		<a href="index.html" class="back-home">Back to Home</a>
-	</div>
-	</div>
+    <h2>Your Application Details</h2>
+
+    <div class="table-responsive">
+
+        <table class="application-details">
+
+            <tr>
+                <th>Full Name</th>
+                <td>${fullName}</td>
+            </tr>
+
+            <tr>
+                <th>Email</th>
+                <td>${email}</td>
+            </tr>
+
+            <tr>
+                <th>Phone Number</th>
+                <td>${phone}</td>
+            </tr>
+
+            <tr>
+                <th>Pet of Interest</th>
+                <td>${petOption}</td>
+            </tr>
+
+            <tr>
+                <th>Housing Type</th>
+                <td>${housingType}</td>
+            </tr>
+
+            <tr>
+                <th>Reason for Adoption</th>
+                <td>${reason}</td>
+            </tr>
+
+            <tr>
+                <th>Home Visit Agreement</th>
+                <td>${agreement}</td>
+            </tr>
+
+        </table>
+
+        <a href="index.html" class="back-home">Back to Home</a>
+
+    </div>
+
+</div>
 
 
 	<footer id="footer">

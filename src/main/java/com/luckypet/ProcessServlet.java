@@ -17,8 +17,8 @@ public class ProcessServlet extends HttpServlet{
         String fullName = req.getParameter("fullName");
         String email = req.getParameter("email");
         String phone =req.getParameter("phone");
-        String pet = req.getParameter("petOption");
-        String housing = req.getParameter("housingType");
+        String petOption = req.getParameter("petOption");
+        String housingType = req.getParameter("housingType");
         String reason = req.getParameter("reason");
         String agreement = req.getParameter("agreement");
 
@@ -26,8 +26,8 @@ public class ProcessServlet extends HttpServlet{
         req.setAttribute("fullName", fullName);
         req.setAttribute("email", email);
         req.setAttribute("phone", phone);
-        req.setAttribute("pet", pet);
-        req.setAttribute("housing", housing);
+        req.setAttribute("petOption", petOption);
+        req.setAttribute("housingType", housingType);
         req.setAttribute("reason", reason);
         req.setAttribute("agreement", agreement);
 
