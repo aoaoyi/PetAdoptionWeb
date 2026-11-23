@@ -1,19 +1,41 @@
+
 @charset "UTF-8";
+
+/* ===== Footer ===== */
 
 #footer {
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     background-color: #19532B;
     text-align: center;
-    padding: 25px 0;
+    padding: 25px 15px;
+    overflow-wrap: anywhere;
 }
 
-/* Footer Paragraph */
+/* ===== Footer Paragraph ===== */
+
 #footer p {
     margin: 8px 0;
-    font-family: Trebuchet MS;
+    max-width: 100%;
+    font-family: "Trebuchet MS";
     font-size: 15px;
     font-weight: bold;
     color: #FFCA26;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
 }
 
+/* ===== Mobile ===== */
 
+@media (max-width: 576px) {
+
+    #footer {
+        padding: 20px 12px;
+    }
+
+    #footer p {
+        font-size: 13px;
+    }
+
+}
