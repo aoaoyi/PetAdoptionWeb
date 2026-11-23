@@ -41,7 +41,7 @@
                 <div class="nav-links ms-auto">
                     <a href="index.html">Home</a>
                     <a href="list.html">Our Pets</a>
-                    <a href="form.html">Adopt</a>
+                    <a href="form.html" class="active">Adopt</a>
                     <a href="#footer">Contact</a>
                 </div>
             </div>
