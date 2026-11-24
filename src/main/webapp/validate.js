@@ -54,4 +54,46 @@ form.addEventListener("submit", (e)=>{
 		e.preventDefault();
 		alert(errors.join('\n'));
 	}
+	else{
+		saveForm(); //keep the answers so the form can be refilled when the user comes back from the confirmation page
+	}
 })
+
+//saves every field of the form into sessionStorage
+function saveForm(){
+	const data = {};
+	form.querySelectorAll("input, select, textarea").forEach((field)=>{
+		if(!field.name) return;
+		if(field.type === "radio"){
+			if(field.checked) data[field.name] = field.value;
+		}
+		else if(field.type === "checkbox"){
+			data[field.name] = field.checked;
+		}
+		else{
+			data[field.name] = field.value;
+		}
+	});
+	sessionStorage.setItem("adoptionForm", JSON.stringify(data));
+}
+
+//refills the form with the saved answers when the page loads
+function restoreForm(){
+	const saved = sessionStorage.getItem("adoptionForm");
+	if(!saved) return;
+	const data = JSON.parse(saved);
+	form.querySelectorAll("input, select, textarea").forEach((field)=>{
+		if(!field.name || !(field.name in data)) return;
+		if(field.type === "radio"){
+			field.checked = (field.value === data[field.name]);
+		}
+		else if(field.type === "checkbox"){
+			field.checked = data[field.name];
+		}
+		else{
+			field.value = data[field.name];
+		}
+	});
+}
+
+restoreForm();

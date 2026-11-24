@@ -159,7 +159,7 @@ body {
 	font-weight: bold;
 	letter-spacing: 0.5px;
 	color: #FFCA26;
-	-webkit-text-stroke: 1px #FFCA26;
+	-webkit-text-stroke: 1px #FFCA26;/*Manually add another bold border*/
 }
 
 
