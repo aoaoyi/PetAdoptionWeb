@@ -119,9 +119,7 @@ body {
 }
 
 .pet{
-	padding: 30px;
-	border-radius: 20px;
-	height: 500px;
+	border-radius: 15px;
 	background-color: white;
 	overflow: hidden;
 	font-size: 20px;
@@ -130,15 +128,19 @@ body {
 }
 
 .pet:hover {
-    transform: translateY(-6px); /* card moves up a little */
+    transform: translateY(-10px); /* card moves up a little */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .pet img{
+	display: block;
 	max-width: 100%;
 	height: 400px;
-    object-fit: cover;  
-    border-radius: 12px;
+    object-fit: cover;
+}
+
+.pet-text{
+	padding: 18px 20px 22px;
 }
 
 /* Animation for Hightlights */
