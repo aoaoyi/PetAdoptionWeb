@@ -33,8 +33,9 @@ form.addEventListener("submit", (e)=>{
 	if(!onlyNumbersPattern.test(phoneNo.value))
 		errors.push("Only numbers are allowed in phone number field!")
 	
-	if(phoneNo.value.length > 11)
-		errors.push("Only 0-11 digits are allowed for phone number!")
+	//checks phoneNo legnth is within 10-11
+	if(phoneNo.value.length < 10 || phoneNo.value.length > 11)
+		errors.push("Only 10-11 digits are allowed for phone number!")
 	
 	//checks if housingTypeSelected is true
 	const housingTypeSelected = document.querySelector('input[name="housingType"]:checked'); //checks if housing type is selected
