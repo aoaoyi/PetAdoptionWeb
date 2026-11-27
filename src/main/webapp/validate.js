@@ -15,6 +15,11 @@ form.addEventListener("submit", (e)=>{
 	if(names.value.trim()==="")
 		errors.push("Please fill in your name!");
 	
+	//checks if name only contain letters
+	const onlyLettersPattern = /^[a-zA-Z]+$/;
+	if(!onlyLettersPattern.test(names.value))
+		errors.push("Only letters are allowed in name field!");
+	
 	//checks if email is empty
 	if(email.value.trim()==="")
 		errors.push("Please fill in your email!");
